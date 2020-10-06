@@ -1,0 +1,16 @@
+
+
+<h1> {{titre}}</h1>
+
+
+
+<fieldset *ngFor=" let a of listeArticles">
+    <legend>{{ a.titre}} </legend>
+
+<label> {{a.contenu}} </label> <br>
+
+<label > {{a.auteur}} </label> <br>
+<label> {{a.date}} </label>
+
+</fieldset>
+

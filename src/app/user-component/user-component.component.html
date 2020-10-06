@@ -1,0 +1,21 @@
+
+
+
+<ul>
+
+    <li>{{name}} </li>
+    <li>{{email}} </li>
+    <li>{{adress}} </li>
+
+    <div *ngFor="let h of hobbies ; let i=index">
+    <li *ngIf="show"> {{h}} 
+    <button (click)="delete(i)"> Supprimer</button>
+</li>
+    </div>
+
+
+</ul>
+<button  (click) = "toggle()" >  {{buttonName}} </button> 
+
+
+
